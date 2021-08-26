@@ -39,7 +39,7 @@ module.exports = {
 
         // Check passwords match
         if (password !== password2) {
-            res.status(400).send('Password do not match');
+            res.status(400).send('Password do not match  ');
             return;
         }
 
