@@ -1,5 +1,4 @@
 const fs = require('fs/promises');
-const req = require('express/lib/request');
 const {pathToDatabase} = require('../config/veriables');
 
 module.exports = {
