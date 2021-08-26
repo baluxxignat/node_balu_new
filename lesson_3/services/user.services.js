@@ -1,6 +1,8 @@
 const fs = require('fs/promises');
 const {pathToDatabase} = require('../config/veriables');
 
+let users = require('../database/users.json');
+
 module.exports = {
     readUsersFromDB: async () => {
         const readUsers = await fs.readFile(pathToDatabase, 'utf-8');
