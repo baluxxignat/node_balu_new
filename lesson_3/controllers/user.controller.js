@@ -15,7 +15,7 @@ module.exports = {
     },
 
     getAllUsers: async (req, res) => {
-        const parseUsers = await readUsersFromDB;
+        const parseUsers = await readUsersFromDB();
         res.render('users', { parseUsers });
     },
 
