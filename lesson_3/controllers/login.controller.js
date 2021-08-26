@@ -7,7 +7,7 @@ module.exports = {
 
     postLoginVerification: async (req, res) => {
         const { email, password } = req.body;
-        const parseUsers = await readUsersFromDB;
+        const parseUsers = await readUsersFromDB();
         const userById = parseUsers.find((user) => user.email === email && user.password === password);
 
         if (userById) {
